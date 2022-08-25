@@ -1,1 +1,3 @@
-# HEXCalculator
+# HEX Calculator
+
+Still in progress
