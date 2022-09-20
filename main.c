@@ -34,7 +34,11 @@ Introduce el número decimal que quieres convertir: ");
     result[i] =  hex[num%16];
     printf("El resultado es: "); 
     for (int j = 0; j < 8; j++){
-       printf("%c", result[j]); 
+        if (result[j] < '0' || result[j] > 'F'){
+            continue;
+        } else {
+            printf("%c", result[j]);      
+        }       
     }
     printf("\n");
     return 0;
